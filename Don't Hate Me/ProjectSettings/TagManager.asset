@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trap
+  - Potal
+  - Trap_Wall
+  - Jumper
+  - Coin
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Obstacles
+    uniqueID: 780804335
+    locked: 0
+  - name: Wall
+    uniqueID: 818228589
+    locked: 0
+  - name: Spikes
+    uniqueID: 3701163299
+    locked: 0
+  - name: Player
+    uniqueID: 2838890537
+    locked: 0
+  - name: Canvas
+    uniqueID: 3383503787
+    locked: 0
