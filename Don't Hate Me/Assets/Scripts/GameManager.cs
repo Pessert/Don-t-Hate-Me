@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Descriptions
-    private const string stage_1Description = "A,D or ←→ - Move \nW or Space - Jump";
+    private const string stage_1Description = "A,D or ←→ - Move \nW or Space - Jump \nAlso, you can double jump!";
     private const string stage_2Description = "R - Restart";
     private const string stage_8Description = "You can't go to the next stage \nif you don't get coins";
     private const string stage_10Description = "+ Jump count";
@@ -66,7 +66,18 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        Screen.SetResolution(1280, 720, false);
+        SetResolution();
+    }
+
+    public void SetResolution()
+    {
+        int setWidth = 1280; // 사용자 설정 너비
+        //int setHeight = 720; // 사용자 설정 높이
+
+        int deviceWidth = Screen.width; // 기기 너비 저장
+        int deviceHeight = Screen.height; // 기기 높이 저장
+
+        Screen.SetResolution(setWidth, (int)(((float)deviceHeight / deviceWidth) * setWidth), false); // SetResolution 함수 제대로 사용하기
     }
 
     private void Update()
